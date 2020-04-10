@@ -1,0 +1,18 @@
+///////////////////////////////////////////////////////////
+// Typography                               (Base mixin) //
+///////////////////////////////////////////////////////////
+
+// Font scaffold //////////////////////////////////////////
+
+// Base size (1rem)
+$base:         20px;
+$baseline:     1.5;
+
+// Fontfaces
+$sans:         sans-serif;
+$serif:        serif;
+
+// Weights
+$normal:       400;
+$regular:      $normal;
+$super:        900;
