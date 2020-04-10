@@ -4,7 +4,10 @@
 
 // Font system ////////////////////////////////////////////
 
-html, body {}
+html, body {
+  font-family: $serif;
+  font-weight: $normal;
+}
 
 // Title
 h1 {}
