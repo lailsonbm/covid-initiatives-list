@@ -1,0 +1,17 @@
+///////////////////////////////////////////////////////////
+// Page name                                (Page block) //
+///////////////////////////////////////////////////////////
+
+.section {
+  h1 { margin-bottom: $spacing-medium; }
+}
+
+.section_hero {
+  display: flex;
+  align-items: center;
+  article { width: 60%; }
+  img {
+    position: absolute;
+    right: 0;
+  }
+}
