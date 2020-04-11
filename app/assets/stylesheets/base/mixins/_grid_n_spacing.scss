@@ -27,4 +27,5 @@ $breakpoints: (
   width: 100%;
   max-width: 970px;
   margin: 0 auto;
+  &.-larger { max-width: 1040px; }
 }

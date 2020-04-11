@@ -13,8 +13,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1040px;
-  margin: 0 auto;
   small { width: 8.6rem; }
   ul { display: flex; }
   li:not(:last-child) { margin-right: $spacing-big; }
@@ -46,4 +44,8 @@ main {
     flex-shrink: 0;
     padding-right: $spacing-bigger;
   }
+}
+
+.section_list {
+  h3 { padding: 0 0 1rem 2rem; }
 }
