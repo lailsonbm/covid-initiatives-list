@@ -4,6 +4,16 @@
 
 // Grid scaffold //////////////////////////////////////////
 
+// Spacings
+$spacing-huge:         3.1rem;  // 62px
+$spacing-biggest:      2.5rem;  // 50px
+$spacing-bigger:       2rem;    // 40px
+$spacing-big:          1.6rem;  // 32px
+$spacing-medium:       1.2rem;  // 24px
+$spacing-regular:       .75rem; // 15px
+$spacing-small:         .65rem; // 13px
+$spacing-smaller:       .02rem; //  4px
+
 // Breakpoints
 $breakpoints: (
   "phone":     20rem,
@@ -11,3 +21,12 @@ $breakpoints: (
   "notebook":  68rem,
   "desktop":   80rem
 );
+
+// Grid
+body { padding-top: 8rem; }
+
+.content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
