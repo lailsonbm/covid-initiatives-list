@@ -17,6 +17,7 @@
 html, body {
   font-family: $serif;
   font-weight: $normal;
+  color: $text-base;
 }
 
 // Title
@@ -41,6 +42,7 @@ blockquote {}
 a {
   font-size: $size-medium;
   text-decoration: underline;
+  color: $text-base;
   &:visited {}
   &:focus {}
   &:hover {}
