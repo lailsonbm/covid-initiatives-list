@@ -8,6 +8,15 @@
 $base:         20px;
 $baseline:     1.5;
 
+body { font-size: $base; }
+
+// Sizes
+$size-huge:         3.1rem;  // 62px
+$size-big:          1.6rem;  // 32px
+$size-medium:        .8rem;  // 16px
+$size-regular:       .75rem; // 15px
+$size-small:         .65rem; // 13px
+
 // Fontfaces
 $sans:         'Roboto', sans-serif;
 $serif:        'Merriweather', serif;
