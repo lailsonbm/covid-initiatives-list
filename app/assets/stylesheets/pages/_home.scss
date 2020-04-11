@@ -1,6 +1,17 @@
 ///////////////////////////////////////////////////////////
-// Page name                                (Page block) //
+// Home                                     (Page block) //
 ///////////////////////////////////////////////////////////
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1020px;
+  margin: 0 auto;
+  small { width: 8.6rem; }
+  ul { display: flex; }
+  li:not(:last-child) { margin-right: $spacing-big; }
+}
 
 .section {
   h1 { margin-bottom: $spacing-medium; }
@@ -9,6 +20,7 @@
 .section_hero {
   display: flex;
   align-items: center;
+  padding: 8rem 0 10rem;
   article { width: 60%; }
   img {
     position: absolute;
