@@ -4,20 +4,33 @@
 
 // Font system ////////////////////////////////////////////
 
+%text_uppercase {
+  font-family: $sans;
+  text-transform: uppercase;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html, body {
   font-family: $serif;
   font-weight: $normal;
 }
 
 // Title
-h1 {}
-h2 {}
+h1 { font-size: $size-huge; }
+h2 { font-size: $size-big; }
 h3 {}
 h4 {}
 h5 {}
 
 // Paragraph
-p {}
+p {
+  font-size: $size-medium;
+  line-height: 1.4rem;
+}
 em {}
 label {}
 strong {}
@@ -26,18 +39,19 @@ blockquote {}
 
 // Link
 a {
+  font-size: $size-medium;
+  text-decoration: underline;
   &:visited {}
   &:focus {}
   &:hover {}
 }
 
-// Code
-code {}
-pre {}
-kbd {}
-
 // Small texts
-small {}
+small {
+  @extend %text_uppercase;
+  font-size: $size-regular;
+  letter-spacing: .12rem;
+}
 legend {}
 figcaption {}
 
