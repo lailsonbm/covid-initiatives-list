@@ -2,11 +2,18 @@
 // Home                                     (Page block) //
 ///////////////////////////////////////////////////////////
 
+main {
+  box-shadow: $shadow;
+  background-color: $background-light;
+  padding: 2rem 0;
+  border-radius: $spacing-huge $spacing-huge 0 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1020px;
+  max-width: 1040px;
   margin: 0 auto;
   small { width: 8.6rem; }
   ul { display: flex; }
@@ -20,10 +27,23 @@
 .section_hero {
   display: flex;
   align-items: center;
-  padding: 8rem 0 10rem;
+  padding: 8rem 0 9rem;
   article { width: 60%; }
   img {
     position: absolute;
     right: 0;
+  }
+}
+
+.section_list-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 6rem 0 $spacing-huge;
+  p { padding-bottom: .4rem; }
+  h2 {
+    width: 22.5rem;
+    flex-shrink: 0;
+    padding-right: $spacing-bigger;
   }
 }
