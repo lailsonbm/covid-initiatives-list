@@ -5,10 +5,7 @@
 // Font scaffold //////////////////////////////////////////
 
 // Base size (1rem)
-$base:         20px;
-$baseline:     1.5;
-
-body { font-size: $base; }
+$size-base:         20px;
 
 // Sizes
 $size-huge:         3.1rem;  // 62px
