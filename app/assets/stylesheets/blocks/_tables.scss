@@ -11,7 +11,8 @@
   &.-green tbody td  { background-color: $green-light; }
 
   td {
-    padding: 1rem 1rem 0;
+    padding: .7rem 1rem 0;
+    box-sizing: border-box;
     &:first-child { border-radius: .5rem .5rem 0 0; }
     &:last-child {
       border-radius: 0 0 .5rem .5rem;
@@ -34,6 +35,7 @@
 
   @include media("<notebook") {
     thead { display: none; }
+    a { word-break: break-all; }
     td {
       display: block;
       float: left;
