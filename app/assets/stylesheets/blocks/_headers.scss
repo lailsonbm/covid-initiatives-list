@@ -1,0 +1,15 @@
+///////////////////////////////////////////////////////////
+// Headers                                       (Block) //
+///////////////////////////////////////////////////////////
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  small { width: 8.6rem; }
+  ul { display: flex; }
+  li:not(:last-child) { margin-right: $spacing-big; }
+  @include media("<notebook") {
+    nav { display: none; }
+  }
+}
