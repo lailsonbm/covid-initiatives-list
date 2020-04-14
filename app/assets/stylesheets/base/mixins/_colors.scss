@@ -5,6 +5,7 @@
 // Palette ////////////////////////////////////////////////
 
 $gray:                  #333;
+$gray-light:            #ebebeb;
 $white:                 #fff;
 
 $blue-darker:           #213e58;
@@ -25,7 +26,7 @@ $success:               #fff;
 $error:                 #fff;
 $warning:               #fff;
 
-$background-dark:       transparentize($gray, .9);
+$background-dark:       $gray-light;
 $background-light:      $white;
 
 // Text
