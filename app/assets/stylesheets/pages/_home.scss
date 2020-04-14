@@ -6,7 +6,9 @@ main {
   box-shadow: $shadow;
   background-color: $background-light;
   padding: 2rem 0;
-  border-radius: $spacing-huge $spacing-huge 0 0;
+  border-radius: $spacing-huge;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -47,5 +49,18 @@ main {
 }
 
 .section_list {
+  margin-bottom: 4rem;
   h3 { padding: 0 0 1rem 2rem; }
+}footer {
+  margin-top: -3rem;
+  padding: 5rem 0 2rem;
+  background-color: $background-dark;
+  article { padding-left: 3rem; }
+  p { margin: 1rem 0 2rem; }
+  small { display: flex; }
+  a { margin-left: .4rem; }
+  .content {
+    display: flex;
+    align-items: center;
+  }
 }
