@@ -49,9 +49,19 @@ main {
 }
 
 .section_list {
+  position: relative;
   margin-bottom: 4rem;
   h3 { padding: 0 0 1rem 2rem; }
-}footer {
+  &.-has-image {
+    img {
+      position: absolute;
+      right: -3rem;
+      top: -2rem;
+    }
+  }
+}
+
+footer {
   margin-top: -3rem;
   padding: 5rem 0 2rem;
   background-color: $background-dark;
