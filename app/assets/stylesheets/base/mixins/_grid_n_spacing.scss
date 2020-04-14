@@ -24,8 +24,13 @@ $breakpoints: (
 
 // Grid
 .content {
-  width: 100%;
   max-width: 970px;
-  margin: 0 auto;
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
   &.-larger { max-width: 1040px; }
+  @include media(">notebook") {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

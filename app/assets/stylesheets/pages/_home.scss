@@ -5,11 +5,17 @@
 main {
   box-shadow: $shadow;
   background-color: $background-light;
-  padding: 2rem 0;
-  border-radius: $spacing-huge;
+  padding: $spacing-bigger 0 1rem;
+  border-radius: $spacing-medium;
   position: relative;
   z-index: 1;
+  @include media(">notebook") {
+    border-radius: $spacing-huge;
+    padding: $spacing-bigger 0;
+  }
 }
+
+img { max-width: 100%; }
 
 .header {
   display: flex;
@@ -18,20 +24,43 @@ main {
   small { width: 8.6rem; }
   ul { display: flex; }
   li:not(:last-child) { margin-right: $spacing-big; }
+  @include media("<notebook") {
+    nav { display: none; }
+  }
 }
 
 .section {
-  h1 { margin-bottom: $spacing-medium; }
+  h1, h2 { margin-bottom: $spacing-medium; }
+  h2 {
+    @include media(">notebook") { margin-bottom: 0; }
+  }
 }
 
 .section_hero {
   display: flex;
   align-items: center;
-  padding: 8rem 0 9rem;
-  article { width: 60%; }
+  flex-wrap: wrap;
+  padding: $spacing-bigger 0 $spacing-huge;
   img {
-    position: absolute;
-    right: 0;
+    position: relative;
+    right: -1rem;
+    margin-top: 1rem;
+  }
+  @include media("<notebook") {
+    small {
+      display: block;
+      margin-bottom: .3rem;
+    }
+  }
+  @include media(">notebook") {
+    flex-wrap: no-wrap;
+    padding: 8rem 0 9rem;
+    article { width: 60%; }
+    img {
+      position: absolute;
+      right: 0;
+      margin-top: 0;
+    }
   }
 }
 
@@ -39,20 +68,29 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 6rem 0 $spacing-huge;
+  padding: 2.5rem 0 $spacing-bigger;
+  @include media("<notebook") { flex-wrap: wrap; }
+  @include media(">notebook") { padding: 6rem 0 $spacing-huge; }
   p { padding-bottom: .4rem; }
   h2 {
-    width: 22.5rem;
-    flex-shrink: 0;
-    padding-right: $spacing-bigger;
+    @include media(">notebook") {
+      padding-right: $spacing-bigger;
+      flex-shrink: 0;
+      width: 22.5rem;
+    }
   }
 }
 
 .section_list {
   position: relative;
-  margin-bottom: 4rem;
-  h3 { padding: 0 0 1rem 2rem; }
+  margin-bottom: 2rem;
+  @include media(">notebook") { margin-bottom: $spacing-bigger; }
+  h3 {
+    padding: 0;
+    @include media(">notebook") { padding: 0 0 1rem 2rem; }
+  }
   &.-has-image {
+    @include media("<notebook") { display: none; }
     img {
       position: absolute;
       right: -3rem;
@@ -62,15 +100,24 @@ main {
 }
 
 footer {
-  margin-top: -3rem;
-  padding: 5rem 0 2rem;
+  margin-top: -1rem;
+  padding: $spacing-bigger 0 1rem;
   background-color: $background-dark;
-  article { padding-left: 3rem; }
-  p { margin: 1rem 0 2rem; }
+  p { margin: .5rem 0 $spacing-bigger; }
   small { display: flex; }
   a { margin-left: .4rem; }
+  @include media("<notebook") {
+    img { margin-bottom: 1rem; }
+  }
+  @include media(">notebook") {
+    margin-top: -3rem;
+    padding: 5rem 0 2rem;
+    article { padding-left: 3rem; }
+    p { margin: 1rem 0 2rem; }
+  }
   .content {
     display: flex;
     align-items: center;
+    @include media("<notebook") { flex-wrap: wrap; }
   }
 }
