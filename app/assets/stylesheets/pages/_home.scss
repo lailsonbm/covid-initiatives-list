@@ -98,26 +98,3 @@ img { max-width: 100%; }
     }
   }
 }
-
-footer {
-  margin-top: -1rem;
-  padding: $spacing-bigger 0 1rem;
-  background-color: $background-dark;
-  p { margin: .5rem 0 $spacing-bigger; }
-  small { display: flex; }
-  a { margin-left: .4rem; }
-  @include media("<notebook") {
-    img { margin-bottom: 1rem; }
-  }
-  @include media(">notebook") {
-    margin-top: -3rem;
-    padding: 5rem 0 2rem;
-    article { padding-left: 3rem; }
-    p { margin: 1rem 0 2rem; }
-  }
-  .content {
-    display: flex;
-    align-items: center;
-    @include media("<notebook") { flex-wrap: wrap; }
-  }
-}
