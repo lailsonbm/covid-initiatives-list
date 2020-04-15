@@ -16,19 +16,26 @@ $spacing-smaller:       .02rem; //  4px
 
 // Breakpoints
 $breakpoints: (
-  "phone":     20rem,
-  "tablet":    51rem,
-  "notebook":  68rem,
-  "desktop":   80rem
+  "phone":     320px,
+  "phablet":   570px,
+  "tablet":    768px,
+  "notebook":  1023px,
+  "desktop":   1279px,
+  "large":     1439px,
+  "huge":      1599px,
 );
 
 // Grid
 .content {
-  max-width: 970px;
+  max-width: 920px;
   width: calc(100% - 2rem);
   margin: 0 1rem;
-  &.-larger { max-width: 1040px; }
-  @include media(">notebook") {
+  @include media(">desktop") { max-width: 970px; }
+  &.-larger {
+    max-width: 950px;
+    @include media(">desktop") { max-width: 1040px; }
+  }
+  @include media(">tablet") {
     width: 100%;
     margin: 0 auto;
     padding: 0;
