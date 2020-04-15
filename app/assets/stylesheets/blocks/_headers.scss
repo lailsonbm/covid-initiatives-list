@@ -3,13 +3,47 @@
 ///////////////////////////////////////////////////////////
 
 .header {
+  position: sticky;
+  z-index: 99999;
+  top: 0;
+  background-color: $background-light;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: .5rem 0;
   small { width: 8.6rem; }
   ul { display: flex; }
   li:not(:last-child) { margin-right: $spacing-big; }
-  @include media("<notebook") {
-    nav { display: none; }
+  nav { display: none; }
+  @include media(">tablet") {
+    padding: 1rem 0;
+    nav { display: block; }
+    .button_menu { display: none; }
+  }
+}
+
+body.-open-menu {
+  .header {
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  nav {
+    display: block;
+    margin-top: 2rem;
+    ul { display: block; }
+    li { margin-bottom: 1rem; }
+  }
+  .menu_icon path {
+    @include transition;
+    &:first-child {
+      transform: rotate(45deg);
+      transform-origin: 2px 7px;
+    }
+    &:nth-child(2) { opacity: 0; }
+    &:last-child {
+      transform: rotate(-45deg);
+      transform-origin: 29px 8px;
+    }
   }
 }
