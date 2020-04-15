@@ -9,7 +9,7 @@ main {
   border-radius: $spacing-medium;
   position: relative;
   z-index: 1;
-  @include media(">notebook") {
+  @include media(">tablet") {
     border-radius: $spacing-huge;
     padding: $spacing-bigger 0;
   }
@@ -18,7 +18,7 @@ main {
 .section {
   h1, h2 { margin-bottom: $spacing-medium; }
   h2 {
-    @include media(">notebook") { margin-bottom: 0; }
+    @include media(">tablet") { margin-bottom: 0; }
   }
 }
 
@@ -39,13 +39,19 @@ main {
     }
   }
   @include media(">notebook") {
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
+    padding: 5rem 0 6rem;
+    img {
+      right: -2.5rem;
+      margin-top: 0;
+    }
+  }
+  @include media(">desktop") {
     padding: 8rem 0 9rem;
     article { width: 60%; }
     img {
       position: absolute;
       right: 0;
-      margin-top: 0;
     }
   }
 }
@@ -70,17 +76,18 @@ main {
 .section_list {
   position: relative;
   margin-bottom: 2rem;
-  @include media(">notebook") { margin-bottom: $spacing-bigger; }
+  @include media(">tablet") { margin-bottom: $spacing-bigger; }
   h3 {
     padding: 0;
-    @include media(">notebook") { padding: 0 0 1rem 2rem; }
+    @include media(">tablet") { padding: 0 0 1rem 2rem; }
   }
   &.-has-image {
-    @include media("<notebook") { display: none; }
+    @include media("<tablet") { display: none; }
     img {
       position: absolute;
-      right: -3rem;
       top: -2rem;
+      right: 0;
+      @include media(">desktop") { right: -3rem; }
     }
   }
 }

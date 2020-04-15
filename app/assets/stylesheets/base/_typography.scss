@@ -25,14 +25,14 @@ html, body {
 h1, h2 {
   font-size: $size-bigger;
   line-height: 1.9rem;
-  @include media(">notebook") {
+  @include media(">tablet") {
     font-size: $size-huge;
     line-height: 4rem;
   }
 }
 h3 {
   font-size: $size-big;
-  @include media(">notebook") { font-size: $size-bigger; }
+  @include media(">tablet") { font-size: $size-bigger; }
 }
 h4 {}
 h5 {}
@@ -84,7 +84,7 @@ td {
 
 // Logo
 .type_logo {
-  @include media(">notebook") { font-size: $size-regular; }
+  @include media(">tablet") { font-size: $size-regular; }
   span:nth-child(1) { color: $blue-dark; }
   span:nth-child(2) { color: $red-dark; }
   span:nth-child(3) { color: $yellow-dark; }
