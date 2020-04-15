@@ -14,13 +14,16 @@
 </header>
 
 <main>
-  <header class="header / content -larger">
+  <header id="header" class="header / content -larger">
     <small class="type_logo">
       <span>Pernambuco</span>
       <span>contra</span>
       <span>o</span>
       <span>vírus</span>
     </small>
+    <button id="button_menu" class="button button_menu" type="button" alt="Abrir e fechar menu">
+      <%= inline_svg_tag "icon-menu.svg", class:'menu_icon' %>
+    </button>
     <nav>
       <ul>
         <li><a href="#section_iniciatives" data-target-section="section_iniciatives">Iniciativas</a></li>
