@@ -2,6 +2,8 @@
 // Home                                     (Page block) //
 ///////////////////////////////////////////////////////////
 
+$image-width: 420px;
+
 main {
   box-shadow: $shadow;
   background-color: $background-light;
@@ -32,8 +34,9 @@ main {
   p:not(:last-child) { margin-bottom: .5rem; }
   img {
     position: relative;
-    right: -1rem;
+    right: -1.2rem;
     margin-top: 1rem;
+    margin-left: auto;
   }
   @include media("<notebook") {
     small {
@@ -44,17 +47,20 @@ main {
   @include media(">notebook") {
     flex-wrap: nowrap;
     padding: 5rem 0 6rem;
+    article { width: calc(100% - #{$image-width} - 2rem); }
     img {
+      position: absolute;
       width: 420px;
-      right: -2.6rem;
+      right: 0;
       margin-top: 0;
     }
   }
-  @include media(">desktop") {
+  @include media(">large") {
     padding: 4rem 0 5rem;
     article { width: 60%; }
     img {
       position: absolute;
+      width: 470px;
       right: 0;
     }
   }
