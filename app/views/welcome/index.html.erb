@@ -7,35 +7,39 @@
       <span>vírus</span>
     </small>
     <h1>Bora se ajudar?</h1>
-    <p>O Governo de Pernambuco se uniu a organizações sem fins lucrativos nesta luta global e criou o programa “Pernambuco Solidário contra o Coronavírus”, que vai reforçar as ações de amparo a pessoas em situação de vulnerabilidade social e abastecer a rede pública de saúde com EPIs, equipamentos hospitalares e outros materiais necessários ao combate da Covid-19.</p>
+    <p>O isolamento social tem sido o remédio necessário para mitigar os impactos da pandemia que estamos vivendo, mas, como muitos remédios, ele pode deixar um gosto amargo na boca. Não estar perto de quem amamos, problemas econômicos e o aumento do número de pessoas em situação de vulnerabilidade, são alguns exemplos dos efeitos colaterais pelos quais estamos passando.</p>
+    <p>Todos temos um papel a desempenhar na luta contra o Coronavírus, e o <strong>“Bora se Ajudar?”</strong> veio trazer um catálogo de várias iniciativas em Pernambuco. Aqui, você vai entender formas de contribuir com essas iniciativas: Doação (financeira e de itens), Apoio a pequenas empresas e Voluntariado.</p>
+    <p>Escolha a iniciativa que você mais se identifica e vamos ajudar no combate à pandemia.</p>
   </article>
 
   <%= image_tag('illustration_gift', srcset: { 'illustration_gift@2x': '2x' }, class: '', alt: 'Ilustração de pessoa oferecendo doações') %>
 </header>
 
 <main>
-  <header id="header" class="header / content -larger">
-    <small class="type_logo">
-      <span>Pernambuco</span>
-      <span>contra</span>
-      <span>o</span>
-      <span>vírus</span>
-    </small>
-    <button id="button_menu" class="button button_menu" type="button" alt="Abrir e fechar menu">
-      <%= inline_svg_tag "icon-menu.svg", class:'menu_icon' %>
-    </button>
-    <nav>
-      <ul>
-        <li><a href="#section_iniciatives" data-target-section="section_iniciatives">Iniciativas</a></li>
-        <li><a href="#section_about" data-target-section="section_about">Sobre o projeto</a></li>
-        <li><a href="">Submeter sua iniciativa</a></li>
-      </ul>
-    </nav>
+  <header id="header" class="header">
+    <div class="content -larger">
+      <small class="type_logo">
+        <span>Pernambuco</span>
+        <span>contra</span>
+        <span>o</span>
+        <span>vírus</span>
+      </small>
+      <button id="button_menu" class="button button_menu" type="button" alt="Abrir e fechar menu">
+        <%= inline_svg_tag "icon-menu.svg", class:'menu_icon' %>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#section_iniciatives" data-target-section="section_iniciatives">Iniciativas</a></li>
+          <li><a href="#section_about" data-target-section="section_about">Sobre o projeto</a></li>
+          <li><a href="">Submeter sua iniciativa</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <article class="section section_list-text / content">
     <h2>Iniciativas em Pernambuco</h2>
-    <p>Há várias maneiras de ajudar pessoas mais vulneráveis e em situações de risco. Aqui dividimos em categorias e listamos algumas dela pra te ajudar a escolher a melhor forma pra você.</p>
+    <p>Há várias maneiras de ajudar pessoas mais vulneráveis e em situações de risco. Aqui dividimos em categorias e listamos algumas delas para te ajudar a escolher a melhor (ou as melhores) forma(s) para você contribuir.</p>
   </article>
 
   <section id="section_iniciatives" class="section section_list / content -larger">
@@ -51,16 +55,22 @@
       </thead>
       <tbody>
         <tr>
-          <td data-th="Instituição"><strong>Armazém do Campo Recife</strong></td>
-          <td data-th="Descrição da iniciativa">O Movimento dos Trabalhadores Rurais Sem Terra (MST) abriu um espaço com mais de 120 produtos à venda, oriundos de assentamentos e de parcerias com agricultores familiares. Agora estão fazendo entregas dos produtos semanalmente.</td>
+          <td data-th="Instituição"><strong>Pernambuco Solidário</strong></td>
+          <td data-th="Descrição da iniciativa">O Governo de Pernambuco se uniu a organizações sem fins lucrativos nesta luta global e criou o programa “Pernambuco Solidário contra o Coronavírus”, que vai reforçar as ações de amparo a pessoas em situação de vulnerabilidade social e abastecer a rede pública de saúde com EPIs, equipamentos hospitalares e outros materiais necessários ao combate da Covid-19.</td>
           <td data-th="Cidade">Recife</td>
-          <td data-th="Site/Instagram"><a class="-small" href="">https://www.instagram.com/armazemdocamporecife/</a></td>
+          <td data-th="Site/Instagram"><a class="-small" href="https://www.pesolidario.com.br">https://www.pesolidario.com.br</a></td>
         </tr>
         <tr>
-          <td data-th="Instituição"><strong>Stella Artois em parceria com o ChefsClub</strong></td>
-          <td data-th="Descrição da iniciativa">Ajude seu restaurante preferido comprando um voucher que vale R$100 com 50% de desconto, valor final R$50,00 e use quando ele reabrir.</td>
+          <td data-th="Instituição"><strong>Vizinhos Solidários</strong></td>
+          <td data-th="Descrição da iniciativa">Doando amor em forma de alimento.</td>
           <td data-th="Cidade">Recife</td>
-          <td data-th="Site/Instagram"><a class="-small" href="">https://www.apoieumrestaurante.com.br/</a></td>
+          <td data-th="Site/Instagram"><a class="-small" href="https://www.instagram.com/vizinhos.solidarios">https://www.instagram.com/vizinhos.solidarios</a></td>
+        </tr>
+        <tr>
+          <td data-th="Instituição"><strong>Casa da Esperança</strong></td>
+          <td data-th="Descrição da iniciativa">A Casa da A Casa da Esperança é uma instituição sem fins lucrativos, situada na comunidade das Carolinas, Jaboatão dos Guararapes, Pernambuco. Hoje, a instituição atende mais de 253 pessoas em diversos programas sociais.</td>
+          <td data-th="Cidade">Jaboatão dos Guararapes</td>
+          <td data-th="Site/Instagram"><a class="-small" href="https://casaesperanca.org.br">https://casaesperanca.org.br</a></td>
         </tr>
       </tbody>
     </table>
@@ -80,16 +90,10 @@
       </thead>
       <tbody>
         <tr>
-          <td data-th="Instituição"><strong>Armazém do Campo Recife</strong></td>
-          <td data-th="Descrição da iniciativa">O Movimento dos Trabalhadores Rurais Sem Terra (MST) abriu um espaço com mais de 120 produtos à venda, oriundos de assentamentos e de parcerias com agricultores familiares. Agora estão fazendo entregas dos produtos semanalmente.</td>
+          <td data-th="Instituição"><strong>ONG Juntos</strong></td>
+          <td data-th="Descrição da iniciativa">Nosso intuito é ajudar quem mais precisa! Através das doações recebidas iremos repassar aos moradores de ruas, às creches e asilos, aos lares de animais, dentre outros, comidas, roupas, remédios, etc. Durante as ações faremos a transmissão via redes sociais e posteriormente toda a prestação de contas será realizada no site (planilhas, balanços, notas fiscais, extratos bancários, etc.)</td>
           <td data-th="Cidade">Recife</td>
-          <td data-th="Site/Instagram"><a class="-small" href="">https://www.instagram.com/armazemdocamporecife/</a></td>
-        </tr>
-        <tr>
-          <td data-th="Instituição"><strong>Stella Artois em parceria com o ChefsClub</strong></td>
-          <td data-th="Descrição da iniciativa">Ajude seu restaurante preferido comprando um voucher que vale R$100 com 50% de desconto, valor final R$50,00 e use quando ele reabrir.</td>
-          <td data-th="Cidade">Recife</td>
-          <td data-th="Site/Instagram"><a class="-small" href="">https://www.apoieumrestaurante.com.br/</a></td>
+          <td data-th="Site/Instagram"><a class="-small" href="http://ongjuntos.org.br/formas-de-doar/">http://ongjuntos.org.br/formas-de-doar/</a></td>
         </tr>
       </tbody>
     </table>
@@ -111,13 +115,19 @@
           <td data-th="Instituição"><strong>Armazém do Campo Recife</strong></td>
           <td data-th="Descrição da iniciativa">O Movimento dos Trabalhadores Rurais Sem Terra (MST) abriu um espaço com mais de 120 produtos à venda, oriundos de assentamentos e de parcerias com agricultores familiares. Agora estão fazendo entregas dos produtos semanalmente.</td>
           <td data-th="Cidade">Recife</td>
-          <td data-th="Site/Instagram"><a class="-small" href="">https://www.instagram.com/armazemdocamporecife/</a></td>
+          <td data-th="Site/Instagram"><a class="-small" href="https://www.instagram.com/armazemdocamporecife">https://www.instagram.com/armazemdocamporecife</a></td>
         </tr>
         <tr>
           <td data-th="Instituição"><strong>Stella Artois em parceria com o ChefsClub</strong></td>
           <td data-th="Descrição da iniciativa">Ajude seu restaurante preferido comprando um voucher que vale R$100 com 50% de desconto, valor final R$50,00 e use quando ele reabrir.</td>
           <td data-th="Cidade">Recife</td>
-          <td data-th="Site/Instagram"><a class="-small" href="">https://www.apoieumrestaurante.com.br/</a></td>
+          <td data-th="Site/Instagram"><a class="-small" href="https://www.apoieumrestaurante.com.br">https://www.apoieumrestaurante.com.br</a></td>
+        </tr>
+        <tr>
+          <td data-th="Instituição"><strong>Bairro Tem! (UFPE)</strong></td>
+          <td data-th="Descrição da iniciativa">No Bairro Tem! é um esforço voluntário e coletivo, criado como uma forma de oferecer estímulo aos comerciantes de bairro, conectando-os às demandas das pessoas em isolamento social.</td>
+          <td data-th="Cidade">Recife</td>
+          <td data-th="Site/Instagram"><a class="-small" href="http://www.nobairrotem.com.br">http://www.nobairrotem.com.br</a></td>
         </tr>
       </tbody>
     </table>
@@ -137,16 +147,16 @@
       </thead>
       <tbody>
         <tr>
-          <td data-th="Instituição"><strong>Armazém do Campo Recife</strong></td>
-          <td data-th="Descrição da iniciativa">O Movimento dos Trabalhadores Rurais Sem Terra (MST) abriu um espaço com mais de 120 produtos à venda, oriundos de assentamentos e de parcerias com agricultores familiares. Agora estão fazendo entregas dos produtos semanalmente.</td>
+          <td data-th="Instituição"><strong>Novo Jeito</strong></td>
+          <td data-th="Descrição da iniciativa">ONG que realiza ações solidárias como a distribuição de alimentos para pessoas em situação de vulnerabilidade.</td>
           <td data-th="Cidade">Recife</td>
-          <td data-th="Site/Instagram"><a class="-small" href="">https://www.instagram.com/armazemdocamporecife/</a></td>
+          <td data-th="Site/Instagram"><a class="-small" href="https://www.facebook.com/novojeito">https://www.facebook.com/novojeito</a></td>
         </tr>
         <tr>
-          <td data-th="Instituição"><strong>Stella Artois em parceria com o ChefsClub</strong></td>
-          <td data-th="Descrição da iniciativa">Ajude seu restaurante preferido comprando um voucher que vale R$100 com 50% de desconto, valor final R$50,00 e use quando ele reabrir.</td>
+          <td data-th="Instituição"><strong>Unificados pela PSR</strong></td>
+          <td data-th="Descrição da iniciativa">União de Projetos Sociais que atuam em prol da População em Situação de Rua</td>
           <td data-th="Cidade">Recife</td>
-          <td data-th="Site/Instagram"><a class="-small" href="">https://www.apoieumrestaurante.com.br/</a></td>
+          <td data-th="Site/Instagram"><a class="-small" href="https://www.instagram.com/unificadospsr">https://www.instagram.com/unificadospsr</a></td>
         </tr>
       </tbody>
     </table>
@@ -158,7 +168,7 @@
     <%= image_tag('illustration_team', srcset: { 'illustration_team@2x': '2x' }, class: '', alt: 'Ilustração de várias faces diferentes representando uma equipe diversa') %>
     <article>
       <h3>Sobre o projeto</h3>
-      <p>Há várias maneiras de ajudar pessoas mais vulneráveis e em situações de risco. Aqui dividimos em categorias e listamos algumas dela pra te ajudar a escolher a melhor forma pra você.</p>
+      <p>Somos parte da Guava, um studio de software de Recife e a gente queria contribuir de alguma forma para melhorar a situação no contexto do combate à COVID-19. Temos várias ideias, e como já tínhamos várias indicações de iniciativas massas que a gente tava vendo surgir, decidimos começar listando-as: um catálogo para dar visibilidade e para você saber como pode contribuir nesse momento.</p>
       <small>
         em parceria com a
         <a href="https://guava.software/" target="_blank"><%= image_tag('guava_logo', srcset: { 'guava_logo@2x': '2x' }, class: '', alt: 'Guava Software') %></a>
