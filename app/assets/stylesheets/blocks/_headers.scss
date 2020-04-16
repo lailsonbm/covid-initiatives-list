@@ -17,6 +17,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  .menu_icon path {
+    @include transition;
+    &:nth-child(2) { opacity: 1; }
+  }
   @include media(">tablet") {
     padding: 1rem 0;
     width: calc(100% - 1rem);
@@ -33,13 +37,13 @@ body.-open-menu {
     align-content: flex-start;
   }
   nav {
+    width: 100%;
     display: block;
     margin-top: 2rem;
     ul { display: block; }
     li { margin-bottom: 1rem; }
   }
   .menu_icon path {
-    @include transition;
     &:first-child {
       transform: rotate(45deg);
       transform-origin: 2px 7px;
