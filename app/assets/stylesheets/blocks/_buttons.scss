@@ -12,3 +12,11 @@
   width: 2.5rem;
   padding: .5rem;
 }
+
+.button_link {
+  @extend small;
+  border: 2px solid $border-dark;
+  padding: .4rem .7rem;
+  border-radius: 7px;
+  text-decoration: none;
+}
