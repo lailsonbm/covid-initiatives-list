@@ -1,0 +1,64 @@
+///////////////////////////////////////////////////////////
+// Lists                                         (Block) //
+///////////////////////////////////////////////////////////
+
+.list {
+  margin-bottom: 4rem;
+  &.-blue .list_row   { background-color: $blue-light; }
+  &.-red .list_row    { background-color: $red-light; }
+  &.-yellow .list_row { background-color: $yellow-light; }
+  &.-green .list_row  { background-color: $green-light; }
+}
+
+.list_row {
+  border-radius: .5rem;
+  margin-bottom: $spacing-small;
+}
+
+.list_header {
+  display: none;
+  .list_columns {
+    padding-bottom: .5rem;
+    li { @extend small; }
+  }
+  @include media(">notebook") { display: block; }
+}
+
+.list_columns {
+  display: grid;
+  align-items: center;
+  padding: 1rem;
+  @include media("<notebook") {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: .5rem;
+  }
+  @include media(">notebook") {
+    grid-template-columns: 20% 37% 13% 30%;
+    padding: 1rem;
+  }
+  li {
+    font-size: $size-small;
+    line-height: 1rem;
+    margin: 0;
+    text-align: left;
+    a { word-break: break-all; }
+    @include media("<notebook") {
+      &:first-child { font-size: $size-medium; }
+      &:before {
+        font-family: $sans;
+        text-transform: uppercase;
+        font-size: $size-small;
+        content: attr(data-th);
+        letter-spacing: .1rem;
+        display: block;
+        margin-bottom: .1rem;
+      }
+    }
+    @include media(">notebook") {
+      padding-right: 1rem;
+      &:first-child { padding-left: 1rem; }
+      &:nth-child(2) { padding-right: 2rem; }
+    }
+  }
+}
