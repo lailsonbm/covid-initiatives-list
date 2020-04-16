@@ -3,7 +3,6 @@
 ///////////////////////////////////////////////////////////
 
 .list {
-  margin-bottom: 4rem;
   &.-blue .list_row   { background-color: $blue-light; }
   &.-red .list_row    { background-color: $red-light; }
   &.-yellow .list_row { background-color: $yellow-light; }

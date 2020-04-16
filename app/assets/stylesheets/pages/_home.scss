@@ -9,6 +9,7 @@ main {
   border-radius: $spacing-medium;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
   @include media(">tablet") {
     border-radius: $spacing-huge;
     padding: $spacing-bigger 0;
@@ -77,17 +78,32 @@ main {
 
 .section_list {
   position: relative;
-  margin-bottom: 2rem;
-  @include media(">tablet") { margin-bottom: $spacing-bigger; }
+  margin-bottom: 3rem;
+  @include media(">tablet") { margin-bottom: 4rem; }
   h3 {
     padding: 0 0 1rem 0;
     @include media(">tablet") { padding: 0 0 1rem 2rem; }
   }
-  &.-has-image img {
-    position: absolute;
-    top: -2rem;
-    right: 0;
-    @include media("<tablet") { display: none; }
-    @include media(">desktop") { right: -3rem; }
+  &.-has-image {
+    img {
+      display: none;
+      @include media(">notebook") {
+        display: block;
+        position: absolute;
+        &.image_items {
+          top: -2.2rem;
+          right: -3rem;
+        }
+        &.image_talk {
+          top: 0;
+          right: -2rem;
+        }
+      }
+      @include media(">desktop") {
+        right: -3rem;
+        &.image_items { right: -3rem; }
+        &.image_talk { right: -3rem; }
+      }
+    }
   }
 }
