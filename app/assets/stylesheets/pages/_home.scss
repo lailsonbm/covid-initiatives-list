@@ -80,16 +80,14 @@ main {
   margin-bottom: 2rem;
   @include media(">tablet") { margin-bottom: $spacing-bigger; }
   h3 {
-    padding: 0;
+    padding: 0 0 1rem 0;
     @include media(">tablet") { padding: 0 0 1rem 2rem; }
   }
-  &.-has-image {
+  &.-has-image img {
+    position: absolute;
+    top: -2rem;
+    right: 0;
     @include media("<tablet") { display: none; }
-    img {
-      position: absolute;
-      top: -2rem;
-      right: 0;
-      @include media(">desktop") { right: -3rem; }
-    }
+    @include media(">desktop") { right: -3rem; }
   }
 }
