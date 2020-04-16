@@ -28,8 +28,8 @@ $breakpoints: (
 // Grid
 .content {
   max-width: 920px;
-  width: calc(100% - 2rem);
-  margin: 0 1rem;
+  width: calc(100% - 2.4rem);
+  margin: 0 1.2rem;
   @include media(">desktop") { max-width: 970px; }
   &.-larger {
     max-width: 950px;
