@@ -27,6 +27,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   padding: $spacing-bigger 0 $spacing-huge;
+  p:not(:last-child) { margin-bottom: .5rem; }
   img {
     position: relative;
     right: -1rem;
@@ -42,12 +43,13 @@ main {
     flex-wrap: nowrap;
     padding: 5rem 0 6rem;
     img {
-      right: -2.5rem;
+      width: 420px;
+      right: -2.6rem;
       margin-top: 0;
     }
   }
   @include media(">desktop") {
-    padding: 8rem 0 9rem;
+    padding: 4rem 0 5rem;
     article { width: 60%; }
     img {
       position: absolute;
