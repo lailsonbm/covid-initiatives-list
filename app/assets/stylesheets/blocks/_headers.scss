@@ -7,24 +7,28 @@
   z-index: 99999;
   top: 0;
   background-color: $background-light;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: .5rem 0;
   small { width: 8.6rem; }
   ul { display: flex; }
   li:not(:last-child) { margin-right: $spacing-big; }
   nav { display: none; }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   @include media(">tablet") {
     padding: 1rem 0;
+    width: calc(100% - 1rem);
+    margin: 0 auto;
     nav { display: block; }
     .button_menu { display: none; }
   }
 }
 
 body.-open-menu {
-  .header {
-    height: 100vh;
+  .header { height: 100vh; }
+  .content {
     flex-wrap: wrap;
     align-content: flex-start;
   }
