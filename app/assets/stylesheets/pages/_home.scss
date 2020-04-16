@@ -9,12 +9,13 @@ main {
   border-radius: $spacing-medium;
   position: relative;
   z-index: 1;
-  overflow-x: hidden;
   @include media(">tablet") {
     border-radius: $spacing-huge;
     padding: $spacing-bigger 0;
   }
 }
+
+.main_wrapper { overflow-x: hidden; }
 
 .section {
   h1, h2 { margin-bottom: $spacing-medium; }
