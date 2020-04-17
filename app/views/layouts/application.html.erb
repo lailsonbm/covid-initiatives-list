@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>Lista de Iniciativas</title>
+    <title>Bora se Ajudar</title>
+
+    <!-- Metatags -->
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= render "layouts/metatags" %>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
     <%= render "layouts/favicons" %>
+
+
+    <!-- Assets -->
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&family=Roboto:wght@900&display=swap" rel="stylesheet">
   </head>
 
