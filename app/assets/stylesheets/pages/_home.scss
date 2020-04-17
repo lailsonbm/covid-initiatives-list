@@ -97,7 +97,11 @@ main {
       padding: 0 0 1rem 2rem;
     }
     h3 {
-      @include media(">=tablet") { max-width: 50%; }
+      width: 100%;
+      @include media(">=tablet") {
+        width: auto;
+        max-width: 50%;
+      }
     }
     .button {
       flex-shrink: 0;
