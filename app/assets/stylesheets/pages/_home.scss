@@ -31,6 +31,7 @@ main {
   align-items: center;
   flex-wrap: wrap;
   padding: $spacing-bigger 0 $spacing-huge;
+  overflow: hidden;
   p:not(:last-child) { margin-bottom: .5rem; }
   img {
     position: relative;
