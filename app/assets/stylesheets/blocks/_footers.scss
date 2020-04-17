@@ -13,6 +13,12 @@ footer {
     margin-top: 1.5rem;
     a { margin-left: .4rem; }
   }
+  .illustration_footer { flex-shrink: 0; }
+  .content {
+    display: flex;
+    align-items: center;
+    @include media("<=tablet") { flex-wrap: wrap; }
+  }
   @include media("<=tablet") {
     img { margin: 0 auto 1rem; }
   }
@@ -20,10 +26,5 @@ footer {
     margin-top: -3rem;
     padding: 5rem 0 2rem;
     article { padding-left: 3rem; }
-  }
-  .content {
-    display: flex;
-    align-items: center;
-    @include media("<=tablet") { flex-wrap: wrap; }
   }
 }
