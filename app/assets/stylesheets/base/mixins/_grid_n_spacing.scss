@@ -30,14 +30,18 @@ $breakpoints: (
   max-width: 920px;
   width: calc(100% - 2.4rem);
   margin: 0 1.2rem;
-  @include media(">desktop") { max-width: 970px; }
   &.-larger {
     max-width: 950px;
     @include media(">desktop") { max-width: 1040px; }
+  }
+  @include media(">phablet", "<=tablet") {
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
   }
   @include media(">tablet") {
     width: 100%;
     margin: 0 auto;
     padding: 0;
   }
+  @include media(">desktop") { max-width: 970px; }
 }
