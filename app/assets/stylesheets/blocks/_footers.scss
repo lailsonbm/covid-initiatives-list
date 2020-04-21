@@ -4,27 +4,45 @@
 
 footer {
   margin-top: -1rem;
-  padding: $spacing-bigger 0 1rem;
+  padding: $spacing-bigger 0 0;
   background-color: $background-dark;
   h3 { margin-bottom: 1rem; }
   p { margin-bottom: .5rem; }
   small {
     display: flex;
-    margin-top: 1.5rem;
+    margin-top: $spacing-big;
     a { margin-left: .4rem; }
   }
   .illustration_footer { flex-shrink: 0; }
   .content {
     display: flex;
     align-items: center;
-    @include media("<=tablet") { flex-wrap: wrap; }
   }
   @include media("<=tablet") {
     img { margin: 0 auto 1rem; }
+    .content { flex-wrap: wrap; }
   }
   @include media(">tablet") {
     margin-top: -3rem;
-    padding: 5rem 0 2rem;
+    padding: 5rem 0 0;
     article { padding-left: 3rem; }
+  }
+}
+
+.footer_disclaimer {
+  text-align: center;
+  box-sizing: border-box;
+  padding: .8rem .5rem;
+  margin-top: 1rem;
+  background-color: transparentize($border-dark, .93);
+  opacity: .8;
+  p {
+    font-size: $size-small;
+    line-height: 1rem;
+    margin-bottom: 0;
+  }
+  @include media(">=tablet") {
+    margin-top: $spacing-big;
+    padding: 1rem $spacing-bigger;
   }
 }
