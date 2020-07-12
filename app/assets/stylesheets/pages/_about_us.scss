@@ -3,16 +3,45 @@
 ///////////////////////////////////////////////////////////
 
 .page_about-us {
-  box-shadow: $shadow;
-  background-color: $background-light;
-  padding: $spacing-bigger 0 1rem;
-  border-radius:  0 0 $spacing-medium $spacing-medium;
   position: relative;
   z-index: 1;
+  padding: $spacing-bigger 0 1rem;
+  overflow: hidden;
+  background-color: $background-light;
+  border-radius:  0 0 $spacing-medium $spacing-medium;
+  box-shadow: $shadow;
   @include media(">tablet") {
+    padding: 0;
     border-radius: 0 0 $spacing-huge $spacing-huge;
-    padding: $spacing-bigger 0;
   }
-  .content { text-align: center; }
+  > img {
+    display: block;
+    margin: 0 auto;
+  }
+  h1 {
+    width: 100%;
+    margin-bottom: $spacing-big;
+  }
+  p { text-align: left; }
+  p + p { margin-top: .5rem; }
+  .page_wrapper {
+    position: relative;
+    padding-bottom: 4rem;
+  }
+  .page_background {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: calc(100% - 2.2rem);
+    background-color: transparentize($border-dark, .93);
+  }
+  .column { width: calc(50% - 1rem); }
   .img { display: inline-block; }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
 }

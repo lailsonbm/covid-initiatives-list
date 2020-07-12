@@ -1,13 +1,19 @@
 <%= render "/menu" %>
 
 <main class="page_about-us">
-  <div class="content">
-    <%= image_tag('illustration_team.png', srcset: { 'illustration_team@2x.png': '2x' }, class: 'illustration_footer', alt: 'Ilustração de várias faces diferentes representando uma equipe diversa') %>
-    <article>
+  <%= image_tag('illustration_team.png', srcset: { 'illustration_team@2x.png': '2x' }, class: 'illustration_footer', alt: 'Ilustração de várias faces diferentes representando uma equipe diversa') %>
+  <div class="page_wrapper">
+    <span class="page_background" role="presentation"></span>
+    <article class="content">
       <h1>Sobre o projeto</h1>
-      <p>Somos parte da Guava, um studio de software de Recife, e a gente queria contribuir de alguma forma para minimizar os impactos do COVID-19 em Pernambuco. Temos várias ideias, e como já tínhamos várias indicações de boas iniciativas que a gente tava</p>
-      <p>vendo surgir, decidimos começar listando-as: um catálogo para dar visibilidade e para você saber como pode contribuir nesse momento!</p>
-      <p>Quer entrar em contato com a gente? Só mandar um email pra: <a href="mailto: boraseajudar@guava.com.br">boraseajudar@guava.com.br</a></p>
+      <article class="column">
+        <p>Somos parte da Guava, um studio de software de Recife, e a gente queria contribuir de alguma forma para minimizar os impactos do COVID-19 em Pernambuco.</p>
+        <p>Temos várias ideias, e como já tínhamos várias indicações de boas iniciativas que a gente tava</p>
+      </article>
+      <article class="column">
+        <p>vendo surgir, decidimos começar listando-as: um catálogo para dar visibilidade e para você saber como pode contribuir nesse momento!</p>
+        <p>Quer entrar em contato com a gente? Só mandar um email pra: <a href="mailto: boraseajudar@guava.com.br">boraseajudar@guava.com.br</a></p>
+      </article>
     </article>
   </div>
 </main>
