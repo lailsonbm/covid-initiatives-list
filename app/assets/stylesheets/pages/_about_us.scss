@@ -1,0 +1,18 @@
+///////////////////////////////////////////////////////////
+// About Us                                 (Page block) //
+///////////////////////////////////////////////////////////
+
+.page_about-us {
+  box-shadow: $shadow;
+  background-color: $background-light;
+  padding: $spacing-bigger 0 1rem;
+  border-radius:  0 0 $spacing-medium $spacing-medium;
+  position: relative;
+  z-index: 1;
+  @include media(">tablet") {
+    border-radius: 0 0 $spacing-huge $spacing-huge;
+    padding: $spacing-bigger 0;
+  }
+  .content { text-align: center; }
+  .img { display: inline-block; }
+}
