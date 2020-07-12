@@ -1,4 +1,4 @@
-<header class="content / section section_hero">
+<section class="content / section section_hero">
   <article class="">
     <small class="type_logo">
       <span>Pernambuco</span>
@@ -13,29 +13,10 @@
   </article>
 
   <%= image_tag('illustration_gift.png', srcset: { 'illustration_gift@2x.png': '2x' }, class: '', alt: 'Ilustração de pessoa oferecendo doações') %>
-</header>
+</section>
 
-<main>
-  <header id="header" class="header">
-    <div class="content -larger">
-      <small class="type_logo">
-        <span>Pernambuco</span>
-        <span>contra</span>
-        <span>o</span>
-        <span>vírus</span>
-      </small>
-      <button id="button_menu" class="button button_menu" type="button" alt="Abrir e fechar menu">
-        <%= inline_svg_tag "icon-menu.svg", class:'menu_icon' %>
-      </button>
-      <nav>
-        <ul>
-          <li><a href="#section_iniciatives" data-target-section="section_iniciatives">Iniciativas</a></li>
-          <li><a href="#section_about" data-target-section="section_about">Sobre o projeto</a></li>
-          <li><a href="https://forms.gle/6U9QGLcKynrAD17T8" target="_blank">Submeter iniciativa</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<main class="page_home">
+  <%= render "/menu" %>
 
   <div id="section_iniciatives" class="main_wrapper">
     <article class="section section_list-text / content">
@@ -323,21 +304,4 @@
   </div>
 </main>
 
-<footer id="section_about">
-  <div class="content">
-    <%= image_tag('illustration_team.png', srcset: { 'illustration_team@2x.png': '2x' }, class: 'illustration_footer', alt: 'Ilustração de várias faces diferentes representando uma equipe diversa') %>
-    <article>
-      <h3>Sobre o projeto</h3>
-      <p>Somos parte da Guava, um studio de software de Recife, e a gente queria contribuir de alguma forma para minimizar os impactos do COVID-19 em Pernambuco. Temos várias ideias, e como já tínhamos várias indicações de boas iniciativas que a gente tava vendo surgir, decidimos começar listando-as: um catálogo para dar visibilidade e para você saber como pode contribuir nesse momento!</p>
-      <p>Quer entrar em contato com a gente? Só mandar um email pra: <a href="mailto: boraseajudar@guava.com.br">boraseajudar@guava.com.br</a></p>
-      <small>
-        em parceria com a
-        <a href="https://guava.software/" target="_blank"><%= image_tag('guava_logo.png', srcset: { 'guava_logo@2x.png': '2x' }, class: '', alt: 'Guava Software') %></a>
-      </small>
-    </article>
-  </div>
-  <div class="footer_disclaimer">
-    <p>O projeto <strong>“Bora se Ajudar?”</strong> não tem nenhum vínculo jurídico com as iniciativas listadas e, por isso, não se responsabiliza pelas atividades por elas realizadas.</p>
-    <p>Algumas das iniciativas podem ter aspecto temporal, podendo não estarem mais disponíveis. Em caso de dúvida, entre em contato utilizando os canais oferecidos por cada uma delas.</p>
-  </div>
-</footer>
+<%= render "/footer" %>

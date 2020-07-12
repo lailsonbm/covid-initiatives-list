@@ -8,10 +8,10 @@
   top: 0;
   background-color: $background-light;
   padding: .5rem 0;
-  small { width: 8.6rem; }
   ul { display: flex; }
   li:not(:last-child) { margin-right: $spacing-big; }
   nav { display: none; }
+  .type_logo { width: 8.6rem; }
   .content {
     display: flex;
     justify-content: space-between;
