@@ -1,0 +1,145 @@
+///////////////////////////////////////////////////////////
+// Ways to Help                             (Page block) //
+///////////////////////////////////////////////////////////
+
+.page_ways {
+  position: relative;
+  z-index: 1;
+  p + p { margin-top: .5rem; }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+
+.section_hero-ways {
+  padding: $spacing-bigger 0 1rem;
+  overflow: hidden;
+  text-align: center;
+  @include media(">tablet") { padding: $spacing-bigger 0 $spacing-huge; }
+  h1 {
+    width: 100%;
+    margin-bottom: $spacing-regular;
+  }
+  p {
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.section_ways {
+  background-color: $background-light;
+  border-radius: $spacing-medium;
+  box-shadow: $shadow;
+  @include media(">tablet") {
+    padding: $spacing-bigger 0 $spacing-huge;
+    border-radius: $spacing-huge;
+  }
+  h2 {
+    @extend h3;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: left;
+  }
+  p { text-align: left; }
+  > img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.ways_options {
+  --accent-color: #{$blue-dark};
+  --accent-bg: #{$blue-light};
+  max-width: 30rem;
+  margin: 0 auto 1rem;
+  text-align: left;
+  h3 {
+    @extend %text_uppercase;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: var(--accent-color);
+    font-size: $size-small;
+    letter-spacing: .12rem;
+    text-align: left;
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      left: -.2rem;
+      z-index: -1;
+      width: calc(100% + .5rem);
+      height: 6px;
+      background-color: var(--accent-bg);
+      border-radius: 5px;
+      content: "";
+      transform: rotate(.5deg);
+    }
+  }
+  p { line-height: 1.3rem; }
+  &:nth-child(2n+1) h3::after { transform: rotate(-.5deg); }
+  &.-larger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    article { max-width: 30rem; }
+    img { margin: 0 2rem; }
+  }
+}
+
+.ways_comunity .ways_options {
+  &:nth-child(2n) {
+    --accent-color: #{$red-dark};
+    --accent-bg: #{$red-light};
+  }
+  &:nth-child(3n):not(:nth-child(2n)) {
+    --accent-color: #{$yellow-darker};
+    --accent-bg: #{$yellow-light};
+  }
+  &:nth-child(4n) {
+    --accent-color: #{$green-dark};
+    --accent-bg: #{$green-light};
+  }
+}
+
+.ways_others .ways_options {
+  --accent-color: #{$yellow-darker};
+  --accent-bg: #{$yellow-light};
+
+  &:nth-child(2n) {
+    --accent-color: #{$green-dark};
+    --accent-bg: #{$green-light};
+  }
+  &:nth-child(3n):not(:nth-child(2n)) {
+    --accent-color: #{$blue-dark};
+    --accent-bg: #{$blue-light};
+  }
+  &:nth-child(4n) {
+    --accent-color: #{$red-dark};
+    --accent-bg: #{$red-light};
+  }
+}
+
+.ways_you .ways_options {
+  --accent-color: #{$red-dark};
+  --accent-bg: #{$red-light};
+
+  &:nth-child(2n) {
+    --accent-color: #{$yellow-darker};
+    --accent-bg: #{$yellow-light};
+  }
+  &:nth-child(3n):not(:nth-child(2n)) {
+    --accent-color: #{$green-dark};
+    --accent-bg: #{$green-light};
+  }
+  &:nth-child(4n) {
+    --accent-color: #{$blue-dark};
+    --accent-bg: #{$blue-light};
+  }
+}

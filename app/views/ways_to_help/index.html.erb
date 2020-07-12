@@ -1,14 +1,119 @@
 <%= render "/menu" %>
 
-<main class="page_ways-to-help">
-  <div class="page_wrapper">
-    <span class="page_background" role="presentation"></span>
-    <article class="content">
-      <h1>Outras formas de ajudar</h1>
-      <p><i>Além de ajudar financeiramente, com doação de alimentos, EPI’s e se tornando voluntário, existem outras formas para colaborar durante a pandemia.</i></p>
-      <p><i>Muitas dessas ações podem ser simples para quem as toma, mas fazem muita diferença na vida das pessoas afetadas… inclusive, pode ser a sua própria vida!</i></p>
-    </article>
-  </div>
+<main class="page page_ways">
+  <section class="content hero / section section_hero-ways">
+    <h1>Outras formas de ajudar</h1>
+    <p><i>Além de ajudar financeiramente, com doação de alimentos, EPI’s e se tornando voluntário, existem outras formas para colaborar durante a pandemia.</i></p>
+    <p><i>Muitas dessas ações podem ser simples para quem as toma, mas fazem muita diferença na vida das pessoas afetadas… inclusive, pode ser a sua própria vida!</i></p>
+  </section>
+
+  <section class="section section_ways">
+    <h2>Cuidados com a comunidade</h2>
+
+    <div class="content -larger / ways_comunity">
+      <article class="ways_options">
+        <h3>Explique</h3>
+        <p>Muitas pessoas não entendem a gravidade da doença ou a necessidade do isolamento social e sua posição como única “solução” que temos. Seja empático e apresente os argumentos de forma paciente e mostrando os dados. Alguns sites que podem lhe ajudar com isso:</p>
+        <p><a href="https://g1.globo.com/jornal-nacional/noticia/2020/03/30/oms-reforca-que-medidas-de-isolamento-social-sao-a-melhor-alternativa-contra-o-coronavirus.ghtml">https://g1.globo.com/jornal-nacional/noticia/2020/03/30/oms-reforca-que-medidas-de-isolamento-social-sao-a-melhor-alternativa-contra-o-coronavirus.ghtml</a></p>
+        <p><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses</a></p>
+      </article>
+
+      <article class="ways_options -larger">
+        <%= image_tag('illustration_pc.png', srcset: { 'illustration_pc@2x.png': '2x' }, class: '', alt: 'Ilustração de um computador aberto com um caderninho ao lado') %>
+        <article>
+          <h3>Não espalhe informações erradas</h3>
+          <p>Vivemos na era da informação e na web você consegue encontrar qualquer tipo de informação, inclusive inverídicas. Além disso, a covid é uma doença que pouco se sabe sobre, e notícias acabam aparecendo o tempo inteiro.</p>
+          <p>Tenha cuidado com as informações que você repassa, cheque a confiabilidade das fontes e, sempre leia/assista/escute antes de repassar. Muitas informações erradas podem ser prejudiciais em vários níveis: para a saúde (como informações ineficientes de prevenção ou medicação), para o psicológico (como um fluxo constante de informações pode afetar os níveis de ansiedade), entre outros.</p>
+        </article>
+      </article>
+
+      <article class="ways_options">
+        <h3>Divulgue iniciativas</h3>
+        <p>Além de informar sobre a doença (com dados verídicos!), precisamos deixar clara a realidade bastante agravada das pessoas já vulneráveis. E sua voz tem poder!</p>
+        <p>Compartilhe informações das instituições que precisam de ajuda, exponha a necessidade das pessoas.</p>
+        <p>Você pode divulgar entre seus familiares e amigos, use suas redes sociais. Mesmo que você não possa doar, sua divulgação pode inspirar algum conhecido à tomar essa ação.</p>
+      </article>
+
+      <article class="ways_options">
+        <h3>Doe Sangue</h3>
+        <p>Bancos de Sangue têm sofrido baixas com o isolamento. Você deve tomar todo cuidado, mas muitos bancos têm oferecido facilidades como agendamentos para evitar maiores riscos.</p>
+        <p>Se informe e doe vida.</p>
+        <p><a href="https://g1.globo.com/pe/pernambuco/noticia/2020/03/26/hemope-disponibiliza-agendamento-para-facilitar-doacao-de-sangue-em-meio-a-pandemia-do-novo-coronavirus.ghtml">https://g1.globo.com/pe/pernambuco/noticia/2020/03/26/hemope-disponibiliza-agendamento-para-facilitar-doacao-de-sangue-em-meio-a-pandemia-do-novo-coronavirus.ghtml</a></p>
+        <p><a href="https://www.facebook.com/ihenepe">https://www.facebook.com/ihenepe</a></p>
+      </article>
+
+      <article class="ways_options">
+        <h3>Doe Leite</h3>
+        <p>Bancos de Leite materno passam pelo mesmo problema dos bancos de sangue. O leite materno é uma das maiores fonte de anticorpos para um bebê, tão importantes nesse momento. Se você tive possibilidade de doar, entre em contato com os bancos da sua cidade.</p>
+        <p>Aqui em Recife, é possível doar sem correr riscos com a Covid:</p>
+        <p><a href="https://g1.globo.com/pe/pernambuco/noticia/2020/04/03/banco-de-leite-materno-do-imip-tem-estoque-baixo-devido-a-pandemia-de-coronavirus-saiba-como-doar.ghtml">https://g1.globo.com/pe/pernambuco/noticia/2020/04/03/banco-de-leite-materno-do-imip-tem-estoque-baixo-devido-a-pandemia-de-coronavirus-saiba-como-doar.ghtml</a></p>
+      </article>
+
+      <article class="ways_options">
+        <h3>Compre dos pequenos comércios locais</h3>
+        <p>Importante para auxiliar a economia local e ajudar financeiramente, ainda que indiretamente, os mais necessitados. Nossa economia é uma cadeia e existe uma grande quantidade de comércios locais responsáveis por muitos empregos quando somados. Grandes companhias, em geral, têm um caixa que permite aguentar crises econômicas; empresas menores, por sua vez, são mais vulneráveis à falência. Ajude os comércios locais optando por eles quando possível.</p>
+      </article>
+    </div>
+
+    <%= image_tag('illustration_pets.png', srcset: { 'illustration_pets@2x.png': '2x' }, class: '', alt: 'Ilustração de animais sentados') %>
+
+    <h2>Cuidados com os outros</h2>
+
+    <div class="content -larger / ways_others">
+      <article class="ways_options">
+        <h3>Compre dos pequenos comércios locais</h3>
+        <p>Importante para auxiliar a economia local e ajudar financeiramente, ainda que indiretamente, os mais necessitados. Nossa economia é uma cadeia e existe uma grande quantidade de comércios locais responsáveis por muitos empregos quando somados. Grandes companhias, em geral, têm um caixa que permite aguentar crises econômicas; empresas menores, por sua vez, são mais vulneráveis à falência. Ajude os comércios locais optando por eles quando possível.</p>
+      </article>
+
+      <article class="ways_options">
+        <h3>Cuide dos animais</h3>
+        <p>Alguns abrigos de animais podem ter sofrido queda nas receitas de doações, se informe, divulgue, inclusive casos de adoção (ainda que temporária) de animais.</p>
+      </article>
+
+      <article class="ways_options">
+        <h3>Cuide das pessoas dos grupos de risco</h3>
+        <p>Se você tem vizinhos, familiares ou amigos no grupo de risco às complicações do coronavírus, ligue para eles para saber como estão se saindo. Ofereça para fazer algumas atividades sem contato com eles, como fazer compras de mantimentos, colocar o lixo para fora ou receber a correspondência. Além disso, especialmente para idosos, não esqueça de sempre entrar em contato, eles sentem muito com a ausência do contato físico.</p>
+      </article>
+    </div>
+
+    <h2>Cuidados com você</h2>
+
+    <div class="content -larger / ways_you">
+      <article class="ways_options">
+        <h3>Faça a limpeza no armário</h3>
+        <p>A gente sempre acha itens que podem não ser mais úteis para a gente e ser bastante úteis para outra pessoa. Aproveite um tempinho do isolamento para fazer a limpeza e doar itens em boas condições.</p>
+      </article>
+
+      <article class="ways_options -larger">
+        <article>
+          <h3>Escreva cartas</h3>
+          <p>Além das necessidades financeiras e físicas, temos que pensar no bem-estar mental também. Esse momento pode ser uma oportunidade para se reconectar com pessoas e escrever cartas é uma boa maneira para isso.</p>
+          <p>Seja para familiares, amigos ou até desconhecidos (abrigos de idosos, por exemplo), as cartas podem ser virtuais, desde que escritas com carinho, serão recebidas dessa maneira.</p>
+        </article>
+        <%= image_tag('illustration_letters.png', srcset: { 'illustration_letters@2x.png': '2x' }, class: '', alt: 'Ilustração de um computador aberto com um caderninho ao lado') %>
+      </article>
+
+      <article class="ways_options">
+        <h3>Procure ajuda</h3>
+        <p>Os aspectos psicológicos têm sido fortemente afetados nesse momento de pandemia: ansiedade com o isolamento e incertezas com o que estar por vir são as ocorrências mais comuns. Se ofereça a ajudar, caso você tenha background para isso e evite ficar fornecendo só notícias ruins.</p>
+        <p>Caso você esteja precisando de ajuda psicológica, considere procurar um profissional. Mesmo que não tenha condições financeiras, algumas instituições estão oferecendo ajuda de maneira gratuita nesse momento. Não deixe de se cuidar! Alguns exemplos:</p>
+      </article>
+
+      <article class="ways_options">
+        <h3>Se puder, Fique em casa</h3>
+        <p>Seguir as diretrizes da saúde pública da sua região, apesar de obrigação, já é uma enorme ajuda. Entretanto, lembre-se que para a covid-19 você pode ser um vetor de transmissão, então, o máximo que você puder ficar em casa, melhor para desacelerar a transmissão da doença.</p>
+        <p>Fique em casa o máximo possível e, quando precisar sair, pratique as regras de distanciamento social e de higiene.</p>
+      </article>
+
+      <article class="ways_options">
+        <h3>Cuide de você</h3>
+        <p>Faça esforço para se manter saudável, para isso se alimente bem, descanse e evite atividades de alto risco. Assim, além de reduzir suas chances para contrair o coronavírus, você ajuda a evitar outras doenças e oprimir os sistemas de saúde.</p>
+        <p>Algumas dicas que fazem bem a sua saúde física e mental: tente adaptar as atividades de lazer para o ambiente de isolamento; se mantenha informado (apenas o necessário); fique calmo; pratique a paciência e a bondade; incentive outras pessoas a fazer o mesmo; e lembre-se que estamos todos juntos!</p>
+      </article>
+    </div>
+
+    <%= image_tag('illustration_plant.png', srcset: { 'illustration_plant@2x.png': '2x' }, class: '', alt: 'Ilustração de uma planta sendo regada') %>
+  </section>
 </main>
 
 <%= render "/footer" %>
