@@ -25,18 +25,31 @@
   p { text-align: left; }
   p + p { margin-top: .5rem; }
   .page_wrapper {
+    --header-height: 3.9rem;
+    --illustraton-height: 15.85rem;
+    --footer-height: 11.1rem;
     position: relative;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+    @include media(">tablet") {
+      min-height: calc(100vh - var(--header-height) - var(--illustraton-height) - var(--footer-height));
+      padding-bottom: 3rem;
+    }
   }
   .page_background {
-    position: absolute;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
-    height: calc(100% - 2.2rem);
-    background-color: transparentize($border-dark, .93);
+    display: none;
+    @include media(">tablet") {
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: calc(100% - 2.2rem);
+      background-color: transparentize($border-dark, .93);
+    }
   }
-  .column { width: calc(50% - 1rem); }
+  .column {
+    @include media(">tablet") { width: calc(50% - 1rem); }
+  }
   .img { display: inline-block; }
   .content {
     display: flex;
