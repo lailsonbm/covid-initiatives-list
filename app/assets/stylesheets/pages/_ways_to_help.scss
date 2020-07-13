@@ -32,6 +32,7 @@
 }
 
 .section_ways {
+  padding: $spacing-medium 0 $spacing-huge;
   background-color: $background-light;
   border-radius: $spacing-medium;
   box-shadow: $shadow;
@@ -39,26 +40,33 @@
     padding: $spacing-bigger 0 $spacing-huge;
     border-radius: $spacing-huge;
   }
+  p { text-align: left; }
   h2 {
     @extend h3;
     width: 100%;
     max-width: 30rem;
     margin: 0 auto;
     text-align: left;
+    @include media("<=tablet") {
+      padding: 0 1rem;
+      margin: 1.5rem 0 .5rem;
+    }
   }
-  p { text-align: left; }
   > img {
     display: block;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .ways_options {
   --accent-color: #{$blue-dark};
   --accent-bg: #{$blue-light};
+  --accent-bg-lighter: #{rgba($blue-light, .34)};
   max-width: 30rem;
   margin: 0 auto 1rem;
   text-align: left;
+  p { line-height: 1.3rem; }
   h3 {
     @extend %text_uppercase;
     position: relative;
@@ -82,23 +90,34 @@
       transform: rotate(.5deg);
     }
   }
-  p { line-height: 1.3rem; }
   &:nth-child(2n+1) h3::after { transform: rotate(-.5deg); }
   &.-larger {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100%;
-    article { max-width: 30rem; }
-    img { margin: 0 2rem; }
+    @include media(">tablet") {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 100%;
+      article { max-width: 30rem; }
+      img { margin: 0 2rem; }
+    }
   }
   &.-donation {
     box-sizing: border-box;
-    width: calc(50% - .8rem);
     padding: $spacing-medium $spacing-big;
-    margin: 1rem 0 2rem;
-    background-color: var(--accent-bg);
+    background-color: var(--accent-bg-lighter);
     border-radius: $spacing-small;
+    @include media(">tablet") {
+      width: calc(50% - .8rem);
+      margin: 1rem 0 2rem;
+    }
+  }
+  &.-has-list {
+    flex-wrap: wrap;
+    max-width: 40rem;
+    article {
+      max-width: 30rem;
+      margin: 0 auto 1rem;
+    }
   }
 }
 
@@ -114,6 +133,7 @@
   &:nth-child(4n) {
     --accent-color: #{$green-dark};
     --accent-bg: #{$green-light};
+    --accent-bg-lighter: #{rgba($green-light, .4)};
   }
 }
 
@@ -124,6 +144,7 @@
   &:nth-child(2n) {
     --accent-color: #{$green-dark};
     --accent-bg: #{$green-light};
+    --accent-bg-lighter: #{rgba($green-light, .4)};
   }
   &:nth-child(3n):not(:nth-child(2n)) {
     --accent-color: #{$blue-dark};
@@ -146,6 +167,7 @@
   &:nth-child(3n):not(:nth-child(2n)) {
     --accent-color: #{$green-dark};
     --accent-bg: #{$green-light};
+    --accent-bg-lighter: #{rgba($green-light, .4)};
   }
   &:nth-child(4n) {
     --accent-color: #{$blue-dark};

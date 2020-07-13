@@ -1,0 +1,11 @@
+///////////////////////////////////////////////////////////
+// Illustrations                                 (Block) //
+///////////////////////////////////////////////////////////
+
+.illustration_letters {
+  @include media("<=tablet") { display: none; }
+}
+
+.illustration_pets {
+  @include media("<=tablet") { margin-top: 1rem; }
+}
