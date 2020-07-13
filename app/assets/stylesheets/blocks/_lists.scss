@@ -70,3 +70,12 @@
     @include media(">notebook") { grid-template-columns: 1fr 1.5fr 1.5fr; }
   }
 }
+
+.list_simple {
+  list-style: circle;
+  margin-left: 1rem;
+  li {
+    font-size: $size-regular;
+    line-height: 1.4rem;
+  }
+}
