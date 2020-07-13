@@ -33,6 +33,7 @@
 
 .section_ways {
   padding: $spacing-medium 0 $spacing-huge;
+  overflow: hidden;
   background-color: $background-light;
   border-radius: $spacing-medium;
   box-shadow: $shadow;
@@ -44,7 +45,7 @@
   h2 {
     @extend h3;
     width: 100%;
-    max-width: 30rem;
+    max-width: 31rem;
     margin: 0 auto;
     text-align: left;
     @include media("<=tablet") {
@@ -63,7 +64,7 @@
   --accent-color: #{$blue-dark};
   --accent-bg: #{$blue-light};
   --accent-bg-lighter: #{rgba($blue-light, .34)};
-  max-width: 30rem;
+  max-width: 31rem;
   margin: 0 auto 1rem;
   text-align: left;
   p { line-height: 1.3rem; }
@@ -97,7 +98,7 @@
       align-items: center;
       justify-content: space-between;
       max-width: 100%;
-      article { max-width: 30rem; }
+      article { max-width: 27rem; }
       img { margin: 0 2rem; }
     }
   }
@@ -115,7 +116,7 @@
     flex-wrap: wrap;
     max-width: 40rem;
     article {
-      max-width: 30rem;
+      max-width: 31rem;
       margin: 0 auto 1rem;
     }
   }
