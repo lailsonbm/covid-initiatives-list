@@ -1,24 +1,31 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+<p align="left">
+  <img src="/app/assets/images/boraseajudar_logo.png" width="300" height="auto" alt="Bora se ajudar logo"/>
+</p>
 
-* Ruby version
+### Overview
+O "Bora Se Ajudar" é um catálogo de iniciativas em Pernambuco. Escolha a iniciativa que você mais se identifica e ajude no combate ao Coronavírus. O catálogo é um projeto sem fins lucrativos, desenvolvido e apoiado por pessoas que fazem parte da Guava Software, com o objetivo de dar visibilidade para quem está minimizando os impactos negativos no combate ao COVID-19.
 
-* System dependencies
+https://www.boraseajudar.com.br/
 
-* Configuration
+### Running
 
-* Database creation
+#### Requirements
+- Ruby Version: `2.6.4`
+- PostgreSQL
 
-* Database initialization
+#### Quick Start
+* Rode `bundle install` para instalar as dependências do arquivo Gemfile do projeto Ruby
+* Rode `yarn install` para instalar as dependências JS existentes no projeto
+* Rode `bin/setup` para criar o banco de dados
+* Por fim, rode `rails s` para iniciar o servidor
 
-* How to run the test suite
+### Deployment
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Release History
+- 1.0
+- 2.0 [WIP]
 
-* Deployment instructions
-
-* ...
+### Feedback & Sugestões
+Quer entrar em contato com a gente? Só mandar um email pra: boraseajudar@guava.com.br ✨
