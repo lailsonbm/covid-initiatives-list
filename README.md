@@ -9,21 +9,21 @@ O "Bora Se Ajudar" é um catálogo de iniciativas em Pernambuco. Escolha a inici
 
 https://www.boraseajudar.com.br/
 
-### Running
+### Como rodar localmente?
 
-#### Requirements
+#### Configurações
 - Ruby Version: `2.6.4`
 - PostgreSQL
 
-#### Quick Start
+#### Inicialização rápida
 * Rode `bundle install` para instalar as dependências do arquivo Gemfile do projeto Ruby
 * Rode `yarn install` para instalar as dependências JS existentes no projeto
 * Rode `bin/setup` para criar o banco de dados
 * Por fim, rode `rails s` para iniciar o servidor
 
-### Deployment
+### Como fazer o Deploy?
 
-#### Release History
+#### Histórico de Releases
 - 1.0
 - 2.0 [WIP]
 
