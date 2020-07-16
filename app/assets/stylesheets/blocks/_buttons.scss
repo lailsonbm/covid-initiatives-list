@@ -3,9 +3,9 @@
 ///////////////////////////////////////////////////////////.
 
 .button {
+  background-color: transparent;
   border: 0;
   box-shadow: none;
-  background-color: transparent;
 }
 
 .button_menu {
@@ -15,9 +15,13 @@
 
 .button_link {
   @extend small;
-  border: 2px solid $border-dark;
+  position: relative;
   padding: .4rem .7rem;
-  border-radius: 7px;
   text-decoration: none;
-  &:hover { border-bottom-width: 4px; }
+  border: 2px solid $border-dark;
+  border-radius: 7px;
+  &:hover {
+    top: -1px;
+    border-bottom-width: 4px;
+  }
 }

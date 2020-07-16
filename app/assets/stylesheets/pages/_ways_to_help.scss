@@ -1,0 +1,177 @@
+///////////////////////////////////////////////////////////
+// Ways to Help                             (Page block) //
+///////////////////////////////////////////////////////////
+
+.page_ways {
+  position: relative;
+  z-index: 1;
+  p + p { margin-top: .5rem; }
+  a { word-break: break-all; }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+
+.section_hero-ways {
+  padding: $spacing-bigger 0 1rem;
+  overflow: hidden;
+  text-align: center;
+  @include media(">tablet") { padding: $spacing-bigger 0 $spacing-huge; }
+  h1 {
+    width: 100%;
+    margin-bottom: $spacing-regular;
+  }
+  p {
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.section_ways {
+  padding: $spacing-medium 0 $spacing-huge;
+  overflow: hidden;
+  background-color: $background-light;
+  border-radius: $spacing-medium;
+  box-shadow: $shadow;
+  @include media(">tablet") {
+    padding: $spacing-bigger 0 $spacing-huge;
+    border-radius: $spacing-huge;
+  }
+  p { text-align: left; }
+  h2 {
+    @extend h3;
+    width: 100%;
+    max-width: 31rem;
+    margin: 0 auto;
+    text-align: left;
+    @include media("<=tablet") {
+      padding: 0 1rem;
+      margin: 1.5rem 0 .5rem;
+    }
+  }
+  > img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.ways_options {
+  --accent-color: #{$blue-dark};
+  --accent-bg: #{$blue-light};
+  --accent-bg-lighter: #{rgba($blue-light, .34)};
+  max-width: 31rem;
+  margin: 0 auto 1rem;
+  text-align: left;
+  p { line-height: 1.3rem; }
+  h3 {
+    @extend %text_uppercase;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: var(--accent-color);
+    font-size: $size-small;
+    letter-spacing: .12rem;
+    text-align: left;
+    &::after {
+      position: absolute;
+      bottom: -4px;
+      left: -.2rem;
+      z-index: -1;
+      width: calc(100% + .5rem);
+      height: 6px;
+      background-color: var(--accent-bg);
+      border-radius: 5px;
+      content: "";
+      transform: rotate(.5deg);
+    }
+  }
+  &:nth-child(2n+1) h3::after { transform: rotate(-.5deg); }
+  &.-larger {
+    @include media(">tablet") {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 100%;
+      article { max-width: 27rem; }
+      img { margin: 0 2rem; }
+    }
+  }
+  &.-donation {
+    box-sizing: border-box;
+    padding: $spacing-medium $spacing-big;
+    background-color: var(--accent-bg-lighter);
+    border-radius: $spacing-small;
+    @include media(">tablet") {
+      width: calc(50% - .8rem);
+      margin: 1rem 0 2rem;
+    }
+  }
+  &.-has-list {
+    flex-wrap: wrap;
+    max-width: 40rem;
+    article {
+      max-width: 31rem;
+      margin: 0 auto 1rem;
+    }
+  }
+}
+
+.ways_comunity .ways_options {
+  &:nth-child(2n) {
+    --accent-color: #{$red-dark};
+    --accent-bg: #{$red-light};
+  }
+  &:nth-child(3n):not(:nth-child(2n)) {
+    --accent-color: #{$yellow-darker};
+    --accent-bg: #{$yellow-light};
+  }
+  &:nth-child(4n) {
+    --accent-color: #{$green-dark};
+    --accent-bg: #{$green-light};
+    --accent-bg-lighter: #{rgba($green-light, .4)};
+  }
+}
+
+.ways_others .ways_options {
+  --accent-color: #{$yellow-darker};
+  --accent-bg: #{$yellow-light};
+
+  &:nth-child(2n) {
+    --accent-color: #{$green-dark};
+    --accent-bg: #{$green-light};
+    --accent-bg-lighter: #{rgba($green-light, .4)};
+  }
+  &:nth-child(3n):not(:nth-child(2n)) {
+    --accent-color: #{$blue-dark};
+    --accent-bg: #{$blue-light};
+  }
+  &:nth-child(4n) {
+    --accent-color: #{$red-dark};
+    --accent-bg: #{$red-light};
+  }
+}
+
+.ways_you .ways_options {
+  --accent-color: #{$red-dark};
+  --accent-bg: #{$red-light};
+
+  &:nth-child(2n) {
+    --accent-color: #{$yellow-darker};
+    --accent-bg: #{$yellow-light};
+  }
+  &:nth-child(3n):not(:nth-child(2n)) {
+    --accent-color: #{$green-dark};
+    --accent-bg: #{$green-light};
+    --accent-bg-lighter: #{rgba($green-light, .4)};
+  }
+  &:nth-child(4n) {
+    --accent-color: #{$blue-dark};
+    --accent-bg: #{$blue-light};
+  }
+}

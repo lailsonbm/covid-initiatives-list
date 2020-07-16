@@ -4,26 +4,33 @@
 
 .header {
   position: sticky;
-  z-index: 99999;
   top: 0;
-  background-color: $background-light;
+  z-index: 99999;
   padding: .5rem 0;
-  small { width: 8.6rem; }
-  ul { display: flex; }
-  li:not(:last-child) { margin-right: $spacing-big; }
+  background-color: $background-light;
   nav { display: none; }
+  ul { display: flex; }
+  li {
+    &:not(:last-child) { margin-right: $spacing-big; }
+    .active { font-weight: $super; }
+    &:hover a:not(.active):not(.button_link),
+    &:focus a:not(.active):not(.button_link) {
+      text-shadow: 0 0 .2px $gray, 0 0 .2px $gray, 0 0 .2px $gray;
+    }
+  }
+  .type_logo { width: 8.6rem; }
   .content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
   .menu_icon path {
     @include transition;
     &:nth-child(2) { opacity: 1; }
   }
   @include media(">tablet") {
-    padding: 1rem 0;
     width: calc(100% - 1rem);
+    padding: 1rem 0;
     margin: 0 auto;
     nav { display: block; }
     .button_menu { display: none; }
@@ -37,8 +44,8 @@ body.-open-menu {
     align-content: flex-start;
   }
   nav {
-    width: 100%;
     display: block;
+    width: 100%;
     margin-top: 2rem;
     ul { display: block; }
     li { margin-bottom: 1rem; }

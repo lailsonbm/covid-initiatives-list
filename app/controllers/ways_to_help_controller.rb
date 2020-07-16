@@ -1,0 +1,2 @@
+class WaysToHelpController < ApplicationController
+end

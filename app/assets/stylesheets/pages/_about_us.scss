@@ -1,0 +1,60 @@
+///////////////////////////////////////////////////////////
+// About Us                                 (Page block) //
+///////////////////////////////////////////////////////////
+
+.page_about-us {
+  position: relative;
+  z-index: 1;
+  padding: $spacing-bigger 0 1rem;
+  overflow: hidden;
+  background-color: $background-light;
+  border-radius:  0 0 $spacing-medium $spacing-medium;
+  box-shadow: $shadow;
+  @include media(">tablet") {
+    padding: 0;
+    border-radius: 0 0 $spacing-huge $spacing-huge;
+  }
+  > img {
+    display: block;
+    margin: 0 auto;
+  }
+  h1 {
+    width: 100%;
+    margin-bottom: $spacing-big;
+  }
+  p { text-align: left; }
+  p + p { margin-top: .5rem; }
+  .page_wrapper {
+    --header-height: 3.9rem;
+    --illustraton-height: 15.85rem;
+    --footer-height: 11.1rem;
+    position: relative;
+    padding-bottom: 2rem;
+    @include media(">tablet") {
+      min-height: calc(100vh - var(--header-height) - var(--illustraton-height) - var(--footer-height));
+      padding-bottom: 3rem;
+    }
+  }
+  .page_background {
+    display: none;
+    @include media(">tablet") {
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: calc(100% - 2.2rem);
+      background-color: transparentize($border-dark, .93);
+    }
+  }
+  .column {
+    @include media(">tablet") { width: calc(50% - 1rem); }
+  }
+  .img { display: inline-block; }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
