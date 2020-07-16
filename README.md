@@ -1,7 +1,7 @@
 
 
 <p align="left">
-  <img src="/app/assets/images/boraseajudar_logo.png" width="300" height="auto" alt="Bora se ajudar logo"/>
+  <img src="https://raw.githubusercontent.com/guava/covid-initiatives-list/7c9fffe40a8c4936272387fa7ee255d375f55fef/app/assets/images/boraseajudar_logo.png" width="300" height="auto" alt="Bora se ajudar logo"/>
 </p>
 
 ### Overview
