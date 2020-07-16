@@ -11,14 +11,13 @@ https://www.boraseajudar.com.br/
 
 ### Como rodar localmente?
 
-#### Configurações
+#### Dependências
 - Ruby Version: `2.6.4`
-- PostgreSQL
+- [PostgreSQL](https://postgresapp.com)
+- [Yarn](https://classic.yarnpkg.com/en/)
 
 #### Inicialização rápida
-* Rode `bundle install` para instalar as dependências do arquivo Gemfile do projeto Ruby
-* Rode `yarn install` para instalar as dependências JS existentes no projeto
-* Rode `bin/setup` para criar o banco de dados
+* Rode `bin/setup` para fazer o setup (instalar dependências, setar o banco de dados, entre outros setups necessários)  
 * Por fim, rode `rails s` para iniciar o servidor
 
 ### Como fazer o Deploy?
